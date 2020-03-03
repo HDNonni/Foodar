@@ -46,6 +46,7 @@ a:hover {
   color:red;
 }
 
+
 .heading {
   text-align: center;
   font-weight: bold;
@@ -82,8 +83,9 @@ a:hover {
   color: maroon;
 }
 #banner {
-  height: 25rem;
+  height: 5.5rem;
   width: 100%;
+  margin-top:1rem;
 }
 
 .backgrd-img {
