@@ -48,3 +48,44 @@ related to tables:
   });
   return promise;
 };
+
+
+attempt at retrieving radio button value and calculating epic fail!
+document
+//   .getElementById("buttonEvent")
+//   .addEventListener("click", getRadioButtons)
+// function getRadioButtons() {
+//   let styleRadios = document.querySelector('input[name="radio"]:checked');
+
+//   console.log(styleRadios);
+// }
+
+// function getTotalAmount(label, name) {
+//   //let style = document.querySelector("input[name = 'radio']:checked")
+//   // console.log("radio checked")
+//   let val;
+//   let style = document.getElementsByClassName("styleType");
+
+//   for (let i = 0; i < style.length; i++) {
+//     if (style[i].checked) {
+//       let val = style[i].value;
+
+//       break;
+//     }
+//   }
+//   return val;
+// }
+// let val = getTotalAmount(document.getElementsByClassName("styleType"), "radio");
+// console.log("radio button 1 values: ", val);
+
+// document.getElementsByClassName("styleType").onsubmit = function() {
+//   // this (keyword) refers to form to which onsubmit attached
+//   // 'ship' is name of radio button group
+//   var val = getRadioButtons(this, "radio");
+//   // display value obtained
+//   alert(val);
+//   // more code here ...
+// };
+
+html button
+<p><button type="button" name="getVal">Style Amount</button></p>

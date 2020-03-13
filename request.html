@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>Request</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1><img id="logo" src="images/logo.png"><span class="headingStyle" id="headingJs">Foodar</span></h1>
+        <ul class="headerLinks">
+            <li class="top-lin"> <a href="about.html"> About</a></li>
+            <li class="top-lin"> <a href="register.html">Register</a></li>
+            <li class="top-lin"> <a href="index.html">Home</a></li>
+    </header>
+    <hr>
+    <section>
+        <h1 class="requestHeading firstSec"> SUBMIT YOUR REQUEST</h1>
+
+        <h3 class="requestSubHead">Please fill out the form below</h3>
+        <label for='email' class="requestEmailLabel">Email Address:</label>
+        <input type="email" class="requestInput" value=" Email">
+    </section>
+
+    <section>
+        <p class="choose">Choose Your Style:</p>
+        <div class="flexContainer">
+           
+            <div class="item">Classic
+                <div>This is a classic treatment</div>
+                <label class="radioContainer classic">
+                    <input class="radioButton requestStyle styleType" type="radio" name="radio" value="3">
+                </label>
+            </div>
+            <div class="item">Premium
+                <div>Pinky's Up</div>
+                <label class="radioContainer premium">
+                    <input class="radioButton requestStyle styleType" type="radio" name="radio" value="5">
+                </label>
+            </div>
+            <div class="item">Royal
+                <div>Your food is served on a silver platter. Literally</div>
+                <label class="radioContainer">
+                    <input class="radioButton requestStyle styleType" type="radio" name="radio" value="10">
+                </label>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <label for='Name' class="requestEmailLabel">Restaurant:</label>
+        <input type="text" class="requestInput" value="Name">
+
+    </section>
+    <section>
+        <p class="choose">Tip:</p>
+        <div class="flexContainer">
+            <div class="item">10%
+                <div>They did their job</div>
+                <label for="radioButton4" class="radioContainer classic15 tipAmount">
+                    <input class="radioButton" id="radioButton4" type="radio" name="radio2" value="0.10">
+                </label>
+            </div>
+            <div class="item">15%
+                <div>They made you feel special</div>
+                <label for="radioButton5" class="radioContainer premium18 tipAmount">
+                    <input class="radioButton" id="radioButton5" type="radio" name="radio2" value="0.15">
+                </label>
+            </div>
+            <div class="item">20%
+                <div>I wanna give them more, but this is all I have!</div>
+                <label for="radioButton6" class="radioContainer tipAmount">
+                    <input class="radioButton" id="radioButton6" type="radio" name="radio2" value="0.20">
+                </label>
+            </div>
+
+    </section>
+    <div id="totalDisplay">
+
+    </div>
+
+    <div id="reqButton">
+        <button id="buttonEvent" class="req-but">REQUEST</button>
+    </div>
+    <hr>
+    <footer>
+
+        <!--<p>Posted by: HDNonni</p>
+       <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></p>
+        <a href="about.html" alt="About Page">About Page</a>-->
+        <p></p>
+        <table>
+            <tr>
+                <td><a href="register.html" alt="Registration Page">Register</a></td>
+                <td><a href="">Privacy Policy</a></td>
+                <td>Dessert First!</td>
+            </tr>
+            <tr>
+                <td><a href="request.html"> Request</a></td>
+                <td><a href="">Terms & Conditions</a></td>
+                <td>&copy; 2020 HDNonni.</td>
+            </tr>
+            <tr>
+                <td><a href="about.html">How it all Works</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
