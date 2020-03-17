@@ -16,18 +16,21 @@
     <header class="header">
         <h1><img id="logo" src="images/logo.png"><span class="headingStyle" id="headingJs">Foodar</span></h1>
         <ul class="headerLinks">
-            <li class="top-lin"> <a href="about.html"> About</a></li>
+            <li class="top-lin"> <a href="about.html" target="-blank"> About</a></li>
             <li class="top-lin"> <a href="register.html">Register</a></li>
-            <li class="top-lin"> <a href="request.html">Request</a></li>
-
+            <li class="top-lin"> <a href="request.html" target="-blank">Request</a></li>
+        </ul>
 
     </header>
+    <div id="buttonDiv">
+        <button id="closeBanner">Close Banner</button>
+    </div>
     <hr>
 
     <section id="banner">
-        <button id = "closeBanner">Close Banner</button>
+
         <!-- <img src="images/banner11.jpeg" width="100%" height="120" class="changeBanner" /> -->
-        
+
     </section>
     <section class="img-container">
         <div class="backgrd-img">
@@ -37,12 +40,12 @@
         </div>
     </section>
     <section>
-        <div>
+        <div class = "zipArea">
             <h2 class="driver">Find a driver near you!</h2>
             <p>Type in your zipcode below and click Go! to find a driver near you</p>
             <form action="">
                 <label for="zipcode" id="zip-label">ZipCode</label>
-                <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" min="5" max="5">
+                <input type="number" id="zipcode" name="zipcode" pattern="[0-9]{5}" min="5" max="5">
                 <button id="zip-btn" type="button">Go!</button>
 
             </form>
@@ -123,7 +126,60 @@
 
         </div>
     </section>
+
+    <h2 class="featureRest">Featured Restaurants</h2>
+
+    <div class="img-container2">
+        <div class="tooltip">
+            <img class="imgLayout " src="images/resturant1.jpeg" alt="random restaurant">
+            <div class="couponContainer coupon tooltiptext">
+                <h3><img class="logoCoupon" src="images/logo.png">Foodar</h3>
+
+                <div class="couponContainer1" style="background-color:white">
+                    <h2><b>20% OFF YOUR PURCHASE</b></h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+                <div class="couponContainer2">
+                    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+                    <p class="expire">Expires: Jan 03, 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <img class="imgLayout" src="images/restaurant2.jpeg" alt="random restaurant">
+            <div class="couponContainer coupon tooltiptext">
+                <h3><img class="logoCoupon" src="images/logo.png">Foodar</h3>
+
+                <div class="couponContainer1" style="background-color:white">
+                    <h2><b>20% OFF YOUR PURCHASE</b></h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+                <div class="couponContainer2">
+                    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+                    <p class="expire">Expires: Jan 03, 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <img class="imgLayout" src="images/resturant3.jpeg" alt="random restaurant">
+            <div class="couponContainer coupon tooltiptext">
+                <h3><img class="logoCoupon" src="images/logo.png">Foodar</h3>
+
+                <div class="couponContainer1" style="background-color:white">
+                    <h2><b>20% OFF YOUR PURCHASE</b></h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+                <div class="couponContainer2">
+                    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+                    <p class="expire">Expires: Jan 03, 2021</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <p class="border-bottom lastP"></p>
+
 
     <!-- <footer class="mainFooter">
 
@@ -142,7 +198,7 @@
             <tr>
                 <td><a href="about.html"> About</a></td>
                 <td><a href="">Terms & Conditions</a></td>
-                <td>&copy; 2020 HDNonni.</td>
+                <td>&copy; HDNonni 2020.</td>
             </tr>
             <tr>
                 <td><a href="">How it all Works</a></td>
@@ -152,7 +208,7 @@
         </table>
     </footer>
     <!-- </div> -->
-    <script src="scripts.js"></script>
+    <script src="banner.js"></script>
 </body>
 
 </html>

@@ -1,30 +1,3 @@
-let bannerArray = [
-  '<img src="images/banner11.jpeg" width="100%" height="80" class="changeBanner" />',
-  '<img src="images/banner22.jpeg" width="100%" height="80" class="changeBanner" />',
-  '<img src="images/banner33.jpeg" width="100%" height="80" class="changeBanner" />'
-];
-
-let currentBannerIndex = 0;
-function rotateBanner() {
-  let bannerElement = document.getElementById("banner");
-  let currentBanner = bannerArray[currentBannerIndex];
-
-  bannerElement.innerHTML = currentBanner;
-  currentBannerIndex = currentBannerIndex + 1;
-
-  if (currentBannerIndex === bannerArray.length) {
-    currentBannerIndex = 0;
-  }
-}
-
-//setInterval(rotateBanner, 5000);
-function stopBanner() {
-  let stopBannerEvent = document.getElementById("closeBanner");
-  stopBannerEvent.addEventListener("click", function() {
-    clearInterval("banner");
-  });
-  console.log("Interval Cleared");
-}
 
 let chosenAmount = 0;
 function addClickHandlerToStyleTypes() {
@@ -34,6 +7,7 @@ function addClickHandlerToStyleTypes() {
     styleTypes[i].onclick = function() {
       console.log("Style Click Handler");
       chosenAmount = Number(this.value);
+      document.getElementById("totalDisplay").innerHTML = "$" + chosenAmount;
     };
   }
 }
@@ -65,3 +39,4 @@ document.getElementById("buttonEvent").addEventListener("click", function() {
   console.log("Percent Amount: ", percentAmount);
   calculateTotal();
 });
+

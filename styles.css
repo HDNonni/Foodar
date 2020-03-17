@@ -76,6 +76,12 @@ a:hover {
    height:80%;
    border-radius:20px; 
 }
+.centering{
+  text-align:center;
+}
+h3 .logoCoupon{
+  height:1.5rem;
+}
 .firstSec{
     margin-top: 1rem;
 }
@@ -114,8 +120,27 @@ a:hover {
   width: 100%;
   /* margin-top:.5rem; */
 }
+button #closeBanner{
+   display: inline-block;
+}
+#buttonDiv{
+  text-align:end;
+}
 .img-container{
   margin-top:-1rem;
+}
+.img-container2{
+  display:flex;
+  padding:.2rem;
+  justify-content: space-between;
+}
+.imgLayout{
+  border-radius:2rem;
+  height:175px;
+  width:270px;
+}
+.featureRest{
+  padding:2rem 1rem;
 }
 .backgrd-img {
   height:25rem;
@@ -148,7 +173,7 @@ section p {
 }
 
 .lastP {
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   margin:0;
 }
 .container {
@@ -158,6 +183,7 @@ section p {
 .choose{
   margin-left:4rem;
   margin-top:3rem;
+  margin-bottom:2rem;
 }
 .flexContainer{
   display:flex;
@@ -205,7 +231,7 @@ section p {
   border-radius: 5px;
 }
 input:hover {
-  font-size: 1.5rem;
+  background-color:lightskyblue;
 }
 #submit:hover {
   font-size: 1.5rem;
@@ -285,7 +311,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-top: 45px;
+  margin-top: 2rem;
   flex: 1;
   align-items: stretch;
 }
@@ -303,6 +329,9 @@ table{
 #zip-label{
     margin-left:1rem;
 }
+input #zipcode:hover{
+  background-color: pink;
+}
 #zipcode {
   border-radius: .25rem;
   margin-left:1rem;
@@ -310,4 +339,66 @@ table{
 }
 #zip-btn {
   border-radius: 5px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.zipArea{
+  text-align:center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 1;
+  transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; At the bottom of the tooltip 
+  left: 50%;
+  margin-left: -5px;
+  border: 3px dotted black;
+} */
+.coupon {
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 5rem;
+  border-radius: 1rem; /* Rounded border */
+  /* margin: 0 auto; Center the coupon */
+  max-width: 600px;
+ 
+}
+
+.couponContainer {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+.coupon:hover{
+  display:block;
 }

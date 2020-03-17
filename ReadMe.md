@@ -1,4 +1,4 @@
-
+My personal notes and code snippets 
 navigation sample responsive w/ flexbox
 
 @media all and (max-width: 1000px) {
